@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar: linear-gradient(120deg, #12629c 0%, #6a1b9a 50%, #d71270 100%);
+
+}
+.navbar-brand {
+    width: 50px;
+    border-radius: 50%;
+}
+.navbar {
+    background: var(--navbar);
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+
+
+}
+
+.nav-link {
+    color: #ccc;
+}
+
+/* -----------------hero-section------------------ */
+.hero-left-sec {
+    margin-top: 15%;
+}
+
+.hero-head-1 {
+    color: #12629c;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-head-1:hover {
+    color: #d71270;
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #d71270, #8e24aa);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(215, 18, 112, 0.45);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #8e24aa, #d71270);
+    transform: translateY(-2px);
+    box-shadow: 10px 8px 20px #12629c;
+}
+
+/* ----------------card-section------------------- */
+
+.btn-scholar {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card-section {
+    background: #6a1b9a;
+}
+
+.card-section .card-icon {
+    font-size: 50px;
+}
+
+.card-section .card {
+    transition: all 0.2s ease-in-out;
+}
+
+.card-head {
+    color: #12629c;
+}
+
+.card-section .card:hover {
+    transform: translateY(-13px);
+}
+
+/* -----------------scholarship----------------- */
+.scholar-search {
+    background: var(--navbar);
+    padding: 20px;
+}
+
+.seach-input {
+    width: 70%;
+    padding: 12px 20px;
+    font-size: medium;
+    outline: none;
+    transition: all 0.8s ease-out;
+}
+
+.seach-input:focus {
+    transform: scale(1.03);
+    border: 2px solid #12629c;
+    border: 2px solid saddlebrown;
+}
+
+/* ----------------------scholarship-section-item----------------- */
+.scholarship-section-item .scholar-row .card {
+    box-shadow: 2px 3px 5px #4a4a4a;
+    transition: all 0.5s ease-in;
+}
+
+.scholarship-section-item .scholar-row .card:hover {
+    transform: scale(1.05);
+    border: 2px solid saddlebrown;
+}
+
+/* --------------------about----------------- */
+
+.about-section img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    /* border-radius: 50%; */
+}
+.about-section .card{
+    background: #fafafa;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+.about-section .card:hover {
+    box-shadow: 2px 5px 10px #4a4a4a;
+}
+.about-section .card h1{
+    color:#12629c;
+}
+.about-section .card h3 {
+    color: #d71270;
+}
+
+/* -------------------footer----------------- */
+.footer {
+    width: 200vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -150px;
+}
+/* -----------------contact-section----------- */
+.contact-section {
+    padding: 5%;
+    background: #d71270;
+    color: #fff;
+    border-top: 2px solid #ccc;
+}
+.contact-section h1 {
+     font-weight: 700;
+}
+.contact-section p {
+    font-size: 1.2rem;
+}
+.contact-section img {
+    margin-top: 2%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.contact-section h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.contact-form {
+  background: #fff;
+  padding-top: 20px;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+}
+
+.contact-form button {
+  border-radius: 8px;
+  padding: 10px;
+}
+.contact-form .form-label{
+    color: #222;
+}
+
+/* --------------------media--------------- */
+@media(max-width: 580px) {
+    .hero-left-sec {
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .btn-scholar {
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width: 800px) and (min-width: 700px) {
+    .hero-left-sec {
+        margin-top: 10px !important;
+
+    }
+
+}
+
+@media(max-width: 800px) {
+    .seach-input {
+        width: 100%;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+    .about-section .card {
+        margin-bottom: 18px;
+    }
+}
